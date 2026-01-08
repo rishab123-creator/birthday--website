@@ -2,7 +2,7 @@ const countdownEl = document.getElementById("countdown");
 const goBtn = document.getElementById("goBtn");
 
 // SET YOUR TARGET DATE HERE
-const targetTime = new Date("2025-01-10T00:00:00").getTime();
+const targetTime = new Date("2026-01-09T00:00:00").getTime();
 
 const timer = setInterval(() => {
     const now = Date.now();
@@ -29,3 +29,4 @@ const timer = setInterval(() => {
 goBtn.addEventListener("click", () => {
     window.location.href = "cake.html";
 });
+
