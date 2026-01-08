@@ -1,0 +1,132 @@
+/* RESET & BASE */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* Center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background image behavior */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PAGE-SPECIFIC BACKGROUNDS */
+.countdown-page {
+    background-image: url("images/image1.jpeg");
+}
+
+.cake-page {
+    background-color: pink;
+}
+
+/* CONTENT BOX */
+.container,
+.cake-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    max-width: 90%;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* COUNTDOWN */
+#countdown {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* BUTTON */
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background: #ff4d6d;
+    color: white;
+    cursor: pointer;
+    display: none;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    background: #e63950;
+    transform: scale(1.05);
+}
+
+/* CAKE IMAGE */
+.cake {
+    width: 250px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/* TEXT */
+p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    #countdown {
+        font-size: 36px;
+    }
+
+    .container,
+    .cake-container {
+        padding: 30px 25px;
+    }
+}
+.messages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.message-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.message-box button {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #ffe5ec;
+}
+
+.hidden {
+    display: none;
+}
+
