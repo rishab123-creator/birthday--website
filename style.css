@@ -22,7 +22,7 @@ body {
 
 /* PAGE-SPECIFIC BACKGROUNDS */
 .countdown-page {
-    background-image: url("images/image1.jpeg");
+    background-color: pink;
 }
 
 .cake-page {
@@ -129,4 +129,5 @@ p {
 .hidden {
     display: none;
 }
+
 
